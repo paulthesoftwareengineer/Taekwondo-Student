@@ -1,0 +1,184 @@
+/* Reset and Base Styles */
+
+
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #000; 
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins, sans-serif';
+}
+
+
+/* Header Styles */
+.site-header {
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+    background-color: #333;
+    color: white;
+}
+nav {
+    background-color: rgba(66, 5, 248, 0.5);
+    padding: 10px 0;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #aaa;
+}
+
+/* Main Content Styles */
+.main {
+    padding: 40px 20px;
+}
+.welcome-section, .reasons-section, .find-business {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+}
+
+/* Background Squares */
+.welcome-section::before, .reasons-section::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(66, 5, 248, 0.5);
+    z-index: -1;
+}
+.welcome-section::before {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+.reasons-section::before {
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+}
+
+/* Section Elements Styles */
+section p, section li, section form {
+    margin-bottom: 20px;
+}
+form input, form button {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #555;
+}
+form button {
+    background-color: rgba(66, 5, 248, 0.5);
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+form button:hover {
+    background-color: #444;
+    color: #ddd; 
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+}
+thead th {
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Miscellaneous Content Styles */
+content {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.sponsor-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+.sponsor-item {
+    border: 1px solid #eee;
+    padding: 1em;
+    border-radius: 5px;
+    text-align: center;
+}
+.sponsor-item h4 {
+    margin-top: 0;
+}
+
+/* Images */
+
+.reason-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Ensures the image covers the entire width and height without being stretched. Might crop the image slightly. */
+    display: block; /* To avoid the bottom margin caused by the default inline display of images. */
+    margin-right: 10px; /* Optional: Adds some space between the image and the text. */
+    float: left; /* Allows the text to flow around the image. */
+}
+
+
+/* Footer Styles */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+.footer-about, .footer-links, .footer-social {
+    flex: 1;
+    padding: 0 15px;
+}
+.footer-about p, .footer-links ul, .footer-social a {
+    margin-bottom: 10px;
+}
+.footer-links ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.footer-links li {
+    margin-bottom: 5px;
+}
+.footer-social a {
+    display: block;
+    margin-bottom: 5px;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
